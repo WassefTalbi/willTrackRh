@@ -1,0 +1,26 @@
+.draggable-disabled {
+  pointer-events: none;
+
+  cursor: not-allowed;
+}
+
+.draggable-enabled {
+  cursor: grab;
+}
+.scrollable-cards {
+    max-height: 600px; 
+    overflow-y: auto;
+    padding-right: 4px; 
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+  }
+  
+  .scrollable-cards::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .scrollable-cards::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 4px;
+  }
+  

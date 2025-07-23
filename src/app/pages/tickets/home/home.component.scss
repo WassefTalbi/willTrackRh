@@ -1,0 +1,98 @@
+/* Section container */
+.teamwill-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, rgba(0, 147, 255, 0.1), rgba(72, 181, 146, 0.1)); /* Logo-inspired gradient */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for a professional touch */
+  }
+  
+  /* Text container */
+  .teamwill-text {
+    flex: 1 1 500px;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 168, 107, 0.15); /* Soft greenish shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 2rem;
+  }
+  
+  .teamwill-text:hover {
+    transform: translateY(-5px); /* Slight hover effect to lift the section */
+    box-shadow: 0 8px 20px rgba(0, 168, 107, 0.25); /* Highlight shadow on hover */
+  }
+  
+  .teamwill-text h2 {
+    font-size: 2.2rem;
+    color: #3b9c2e; /* Fresh green, professional */
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .teamwill-text p {
+    font-size: 1.1rem;
+    color: #4d4d4d;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  
+  .teamwill-text ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .teamwill-text ul li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+  }
+  
+  .teamwill-text ul li strong {
+    color: #397c55; /* Match the green theme */
+    font-weight: 600;
+  }
+  
+  /* Image container */
+  .teamwill-image {
+    flex: 1 1 500px;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 168, 107, 0.15); /* Soft green shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .teamwill-image:hover {
+    transform: scale(1.05); /* Slight zoom effect for the image */
+    box-shadow: 0 8px 20px rgba(0, 168, 107, 0.25); /* Highlight shadow on hover */
+  }
+  
+  .teamwill-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 168, 107, 0.2); /* Lighter green shadow for the image */
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .teamwill-section {
+      flex-direction: column;
+    }
+  
+    .teamwill-text,
+    .teamwill-image {
+      flex: 1 1 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  
